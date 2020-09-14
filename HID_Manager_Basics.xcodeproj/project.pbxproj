@@ -11,6 +11,13 @@
 		8D71CC5E250F1EB0000D8B43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71CC5D250F1EB0000D8B43 /* ViewController.swift */; };
 		8D71CC60250F1EB1000D8B43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D71CC5F250F1EB1000D8B43 /* Assets.xcassets */; };
 		8D71CC63250F1EB1000D8B43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D71CC61250F1EB1000D8B43 /* Main.storyboard */; };
+		8D71CC73250F1FF3000D8B43 /* 64characters_Telephone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71CC6C250F1FF3000D8B43 /* 64characters_Telephone.swift */; };
+		8D71CC74250F1FF3000D8B43 /* IOKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71CC6D250F1FF3000D8B43 /* IOKit.swift */; };
+		8D71CC75250F1FF3000D8B43 /* Other.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71CC6E250F1FF3000D8B43 /* Other.swift */; };
+		8D71CC76250F1FF3000D8B43 /* USB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71CC6F250F1FF3000D8B43 /* USB.swift */; };
+		8D71CC77250F1FF3000D8B43 /* IOHIDLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71CC70250F1FF3000D8B43 /* IOHIDLib.swift */; };
+		8D71CC78250F1FF3000D8B43 /* IOCFPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71CC71250F1FF3000D8B43 /* IOCFPlugin.swift */; };
+		8D71CC79250F1FF3000D8B43 /* HID_Manager_Basics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71CC72250F1FF3000D8B43 /* HID_Manager_Basics.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +28,13 @@
 		8D71CC62250F1EB1000D8B43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D71CC64250F1EB1000D8B43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D71CC65250F1EB1000D8B43 /* HID_Manager_Basics.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HID_Manager_Basics.entitlements; sourceTree = "<group>"; };
+		8D71CC6C250F1FF3000D8B43 /* 64characters_Telephone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 64characters_Telephone.swift; sourceTree = "<group>"; };
+		8D71CC6D250F1FF3000D8B43 /* IOKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IOKit.swift; sourceTree = "<group>"; };
+		8D71CC6E250F1FF3000D8B43 /* Other.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Other.swift; sourceTree = "<group>"; };
+		8D71CC6F250F1FF3000D8B43 /* USB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = USB.swift; sourceTree = "<group>"; };
+		8D71CC70250F1FF3000D8B43 /* IOHIDLib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IOHIDLib.swift; sourceTree = "<group>"; };
+		8D71CC71250F1FF3000D8B43 /* IOCFPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IOCFPlugin.swift; sourceTree = "<group>"; };
+		8D71CC72250F1FF3000D8B43 /* HID_Manager_Basics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HID_Manager_Basics.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +73,23 @@
 				8D71CC61250F1EB1000D8B43 /* Main.storyboard */,
 				8D71CC64250F1EB1000D8B43 /* Info.plist */,
 				8D71CC65250F1EB1000D8B43 /* HID_Manager_Basics.entitlements */,
+				8D71CC72250F1FF3000D8B43 /* HID_Manager_Basics.swift */,
+				8D71CC6B250F1FF3000D8B43 /* External */,
 			);
 			path = HID_Manager_Basics;
+			sourceTree = "<group>";
+		};
+		8D71CC6B250F1FF3000D8B43 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				8D71CC6C250F1FF3000D8B43 /* 64characters_Telephone.swift */,
+				8D71CC6D250F1FF3000D8B43 /* IOKit.swift */,
+				8D71CC6E250F1FF3000D8B43 /* Other.swift */,
+				8D71CC6F250F1FF3000D8B43 /* USB.swift */,
+				8D71CC70250F1FF3000D8B43 /* IOHIDLib.swift */,
+				8D71CC71250F1FF3000D8B43 /* IOCFPlugin.swift */,
+			);
+			path = External;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,7 +162,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D71CC73250F1FF3000D8B43 /* 64characters_Telephone.swift in Sources */,
 				8D71CC5E250F1EB0000D8B43 /* ViewController.swift in Sources */,
+				8D71CC76250F1FF3000D8B43 /* USB.swift in Sources */,
+				8D71CC78250F1FF3000D8B43 /* IOCFPlugin.swift in Sources */,
+				8D71CC74250F1FF3000D8B43 /* IOKit.swift in Sources */,
+				8D71CC75250F1FF3000D8B43 /* Other.swift in Sources */,
+				8D71CC79250F1FF3000D8B43 /* HID_Manager_Basics.swift in Sources */,
+				8D71CC77250F1FF3000D8B43 /* IOHIDLib.swift in Sources */,
 				8D71CC5C250F1EB0000D8B43 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
