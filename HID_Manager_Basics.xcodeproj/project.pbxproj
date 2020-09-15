@@ -18,6 +18,7 @@
 		8D71CC77250F1FF3000D8B43 /* IOHIDLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71CC70250F1FF3000D8B43 /* IOHIDLib.swift */; };
 		8D71CC78250F1FF3000D8B43 /* IOCFPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71CC71250F1FF3000D8B43 /* IOCFPlugin.swift */; };
 		8D71CC79250F1FF3000D8B43 /* HID_Manager_Basics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71CC72250F1FF3000D8B43 /* HID_Manager_Basics.swift */; };
+		8D71CC7B25106493000D8B43 /* HID_Device_Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71CC7A25106493000D8B43 /* HID_Device_Properties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		8D71CC70250F1FF3000D8B43 /* IOHIDLib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IOHIDLib.swift; sourceTree = "<group>"; };
 		8D71CC71250F1FF3000D8B43 /* IOCFPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IOCFPlugin.swift; sourceTree = "<group>"; };
 		8D71CC72250F1FF3000D8B43 /* HID_Manager_Basics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HID_Manager_Basics.swift; sourceTree = "<group>"; };
+		8D71CC7A25106493000D8B43 /* HID_Device_Properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HID_Device_Properties.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				8D71CC64250F1EB1000D8B43 /* Info.plist */,
 				8D71CC65250F1EB1000D8B43 /* HID_Manager_Basics.entitlements */,
 				8D71CC72250F1FF3000D8B43 /* HID_Manager_Basics.swift */,
+				8D71CC7A25106493000D8B43 /* HID_Device_Properties.swift */,
 				8D71CC6B250F1FF3000D8B43 /* External */,
 			);
 			path = HID_Manager_Basics;
@@ -162,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D71CC7B25106493000D8B43 /* HID_Device_Properties.swift in Sources */,
 				8D71CC73250F1FF3000D8B43 /* 64characters_Telephone.swift in Sources */,
 				8D71CC5E250F1EB0000D8B43 /* ViewController.swift in Sources */,
 				8D71CC76250F1FF3000D8B43 /* USB.swift in Sources */,

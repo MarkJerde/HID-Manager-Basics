@@ -212,54 +212,11 @@ func myShowHIDProperties(hidDevice: io_registry_entry_t) {
 		return
 	}
 
-
-	NSLog("- Device Properties -")
-	guard let dict = properties as? [String: AnyObject] else {
+	guard let dict = properties as? [String: AnyObject?] else {
 		return
 	}
-	[kIOHIDTransportKey,
-	 kIOHIDVendorIDKey,
-	 kIOHIDProductIDKey,
-	 kIOHIDVersionNumberKey,
-	 kIOHIDManufacturerKey,
-	 kIOHIDProductKey,
-	 kIOHIDSerialNumberKey,
-	 kIOHIDLocationIDKey,
-	 kUSBDevicePropertyLocationID,
-	 kIOHIDPrimaryUsageKey,
-	 kIOHIDPrimaryUsagePageKey,
-	 "idVendor",
-	 "USB Product Name",
-	 "idProduct",
-		].forEach {
-			guard let value = dict[$0] else {
-				NSLog("\($0) = nil")
-				return
-			}
-			NSLog("\($0) = \(value)")
-	}
-
-	NSLog("- Device Element Properties -")
-	[kIOHIDElementKey,
-		].forEach {
-			if let properties = dict[$0] as? [Any] {
-				properties.forEach {
-					if let propdict = $0 as? [String: Any?] {
-						propdict.keys.forEach {
-							guard let value = dict[$0] else {
-								NSLog("\($0) = nil")
-								return
-							}
-							NSLog("\($0) = \(value)")
-						}
-					} else if let prop = $0 as? String {
-						NSLog(":= \(prop)")
-					} else {
-						NSLog(":- \($0)")
-					}
-				}
-			}
-	}
+	let deviceProperties = HIDDeviceProperties(properties: dict)
+	deviceProperties.log()
 }
 
 /*func myShowDictionaryElement(dictionary: CFDictionaryRef, key: CFStringRef) {
